@@ -26,7 +26,7 @@ const SideBar = () => {
       setIsloading(false);
     }
    
-  }, [projects])
+  }, [projects, dispatch])
 
   return (
     <div  className="container-fluid">
@@ -50,7 +50,7 @@ const SideBar = () => {
                     setIsloading(false)
                   }}
                 >
-                  <a style={{cursor: "pointer"}} className="nav-link px-2">{project.text}</a>
+                  <p style={{cursor: "pointer"}} className="nav-link px-2">{project.text}</p>
                 </li>
               );
             })}
@@ -58,8 +58,8 @@ const SideBar = () => {
           <ProjectInput addP={addP} setAddP={setAddP}/>
         </div>
         
-        {/* {isLoading ? <img style={{width: 200, height: 200}} src={isLoadingIcon}/> : <ListAllProTasks selected = {selected}/>} */}
-        {loading ? <div className="spinner"><img style={{width: 200, height: 200}} src={isLoadingIcon}/></div> : <ListAllProTasks selected = {selected} loading={loading}/> }
+        {/* {isLoading ? <img alt="Spinner image" style={{width: 200, height: 200}} src={isLoadingIcon}/> : <ListAllProTasks selected = {selected}/>} */}
+        {loading ? <div className="spinner"><img alt="Spinner" style={{width: 200, height: 200}} src={isLoadingIcon}/></div> : <ListAllProTasks selected = {selected} loading={loading}/> }
         
       </div>      
     </div>
