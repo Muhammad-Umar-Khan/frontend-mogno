@@ -14,7 +14,6 @@ import Login from "../components/userComponents/login";
 import Register from "../components/userComponents/register";
 // import GetAllProjects from "../components/projectComponents/GetAllProjects";
 import Home from "../components/projectComponents/Home";
-import Navbar from "../components/taskComponents/Navbar";
 
 // logic imports
 import PrivateRouting from "./privateRoute";
@@ -35,11 +34,9 @@ export default function NavigationLogic() {
   }, [dispatch]);
 
   return (
-    <div>
+    <>
       <Router>
-        <Navbar className="col-md-12" />
         <div>
-          {/* <div className="col-md-8 offset-2"> */}
           <Routes>
             <Route
               path="/login"
@@ -76,6 +73,6 @@ export default function NavigationLogic() {
           </Routes>
         </div>
       </Router>
-    </div>
+    </>
   );
 }

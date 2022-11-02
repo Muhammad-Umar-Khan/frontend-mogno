@@ -36,8 +36,6 @@ const ListAllProTasks = ({ selected }) => {
     <div
       className="col-md-8"
       style={{
-        paddingLeft: 50,
-        marginTop: 20,
         display: "flex",
         flexWrap: "wrap",
         textAlign: "center",

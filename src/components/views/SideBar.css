@@ -18,20 +18,50 @@
 }
 
 .hrColor {
-  /* color: #514392; */
   border-top: 1.5px solid #514392;
 }
 
 #bgcolor {
   background-color: #6e5cc2;
 }
-.side__bar {
+
+/* .side__bar {
   height: auto;
   padding-bottom: 50px;
   padding-right: 30px;
+} */
+
+.content {
+  display: flex;
+  align-items: center;
 }
 
+/* .background_color {
+        background-color: #9278ff;
+        height: 100vh;
+      }
+      .backgroundColor {
+        background-color: #e5e5e5;
+        height: 100vh;
+      } */
+
 .navbar-nav > li {
-  padding-left: 50%;
-  padding-right: 40%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
+/* .app-container {
+  display: flex;
+}
+.left {
+  background-color: #9278ff;
+  margin-right: auto;
+  width: 20%;
+}
+
+.right {
+  background-color: #e5e5e5;
+  width: 80%;
+  height: 91vh;
+  margin-left: auto;
+} */
