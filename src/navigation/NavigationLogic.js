@@ -47,6 +47,14 @@ export default function NavigationLogic() {
               }
             ></Route>
             <Route
+              path="/logout"
+              element={
+                <PublicRouting auth={islogin}>
+                  <Login />
+                </PublicRouting>
+              }
+            ></Route>
+            <Route
               path="/register"
               element={
                 <PublicRouting auth={islogin}>
