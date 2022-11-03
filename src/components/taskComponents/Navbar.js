@@ -31,7 +31,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item" onClick={() => localStorage.clear()}>
-                <a className="nav-link" href="/login">
+                <a className="nav-link" href="/">
                   Logout
                 </a>
               </li>

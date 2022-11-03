@@ -75,6 +75,12 @@ const Register = () => {
                   onBlur={handleBlur}
                 ></input>
                 <br />
+                <input
+                  type="file"
+                  className="form-control"
+                  name="image"
+                ></input>
+                <br />
                 {errors.password && touched.password ? (
                   <p>{errors.password}</p>
                 ) : (
